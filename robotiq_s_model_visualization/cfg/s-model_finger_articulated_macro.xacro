@@ -107,7 +107,7 @@ finger(i.e. finger_1, etc...).
 		<!-- joint list -->
 		
 		<!-- WARNING: LIMITS NOT CORRECT -->
-		<joint name="${prefix}joint_1" type="revolute">
+		<joint name="${prefix}joint_1" type="fixed">
 			<parent link="${prefix}link_0"/>
 			<child link="${prefix}link_1"/>
 			<axis xyz="0 0 1"/>
@@ -115,7 +115,7 @@ finger(i.e. finger_1, etc...).
 			<limit lower="0" upper="3.1416" effort="100" velocity="100"/>
 		</joint>
 		<!-- WARNING: LIMITS NOT CORRECT -->
-		<joint name="${prefix}joint_2" type="revolute">
+		<joint name="${prefix}joint_2" type="fixed">
 			<parent link="${prefix}link_1"/>
 			<child link="${prefix}link_2"/>
 			<axis xyz="0 0 1"/>
@@ -123,7 +123,7 @@ finger(i.e. finger_1, etc...).
 			<limit lower="0" upper="3.1416" effort="100" velocity="100"/>
 		</joint>
 		<!-- WARNING: LIMITS NOT CORRECT -->
-		<joint name="${prefix}joint_3" type="revolute">
+		<joint name="${prefix}joint_3" type="fixed">
 			<parent link="${prefix}link_2"/>
 			<child link="${prefix}link_3"/>
 			<axis xyz="0 0 1"/>
